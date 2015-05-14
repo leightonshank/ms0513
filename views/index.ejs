@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <!-- bower:css -->
+    <link rel='stylesheet' href='../bower_components/semantic-ui/dist/semantic.css' />
+    <!-- endbower -->
+  </head>
+  <body>
+    <div class="ui vertically padded page grid">
+      <div class="row">
+        <div class="four wide column">
+          <img src="/images/buddha.png">
+        </div>
+        <div class="twelve wide column">
+          <div class="ui one column grid">
+            <div class="column">
+              <img src='/images/midnight_spaghetti.png'>
+            </div>
+            <div class="column">
+              <div class="ui large three item secondary pointing orange menu">
+                <div class="item">
+                  <a class="menuitem" href="/learn">Learn</a>
+                </div>
+                <div class="item">
+                  <a class="menuitem" href="/follow">Follow</a>
+                </div>
+                <div class="active item">
+                  <a class="menuitem" href="/">Experience</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- feed -->
+        <div class="twelve wide column">
+          <%- include("feed") %>
+        </div>
+
+        <!-- sidebar -->
+        <div class="four wide column">
+          <%- include("sidebar") %>
+        </div>
+      </div>
+    </div>
+    <!-- bower:js -->
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/semantic-ui/dist/semantic.js"></script>
+    <!-- endbower -->
+  </body>
+</html>

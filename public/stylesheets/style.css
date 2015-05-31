@@ -1,7 +1,12 @@
-body {
-  padding-top: 42px;
-}
 .menu .item .menuitem {
   font-size: 39px;
   font-weight: bold;
+}
+
+#midnight {
+  padding-top: 6rem;
+}
+
+#gstrings {
+  padding-top: 7rem;
 }
